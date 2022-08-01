@@ -11,7 +11,7 @@ while n != num:
     print('\033[1;34mPRECESSANDO...\033[m')
     sleep(1)
     if n == num:
-        print('Parabens voce \033[1;32mACERTOU!\033[m'if n == num else 'Voce \033[1;31merrou\033[m eu pensei no número {} não no {}.'.format(num, n))
+        print('Parabens voce \033[1;32mACERTOU!\033[m'if n == num else f'Voce \033[1;31merrou\033[m eu pensei no número {num} não no {n}.')
     else:
         print('\033[1;31mERROU\033[m')
         if num > n:
@@ -20,4 +20,4 @@ while n != num:
             print('Menos.. Tente mais uma vez')
         cont += 1
         print('_'*30)
-print('Você realzou {} tentantivas até acerta o numero que eu pensei.'.format(cont))
+print(f'Você realzou {cont} tentantivas até acerta o numero que eu pensei.')
